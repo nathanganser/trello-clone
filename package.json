@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "vue-cli-service build && node deploy_skynet.js",
+    "publish": "node deploy_skynet.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
@@ -18,6 +20,7 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.1.0",
     "@ky-is/vue-cli-plugin-tailwind": "^1.6.0",
+    "@nebulous/skynet": "^1.1.0",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
     "@vue/cli-service": "^3.5.0",
@@ -30,6 +33,7 @@
     "stylus-loader": "^3.0.2",
     "tailwindcss": "^0.7.0",
     "vue-cli-plugin-fontawesome": "^0.2.0",
+    "vue-cli-plugin-skynet": "~1.0.0",
     "vue-template-compiler": "^2.5.21"
   }
 }
